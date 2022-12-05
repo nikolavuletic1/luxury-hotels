@@ -4,9 +4,11 @@ import "../homepage/videoTour.styles.scss";
 import "video.js/dist/video-js.css";
 import VideoJS from "./videoJsPlayer.component";
 import VideoTourVideo from "../../assets/VideoTour.mp4";
+// import VideoTourVideo from "../../assets/videoSample.webm";
 
 export default function VideoTour() {
   const videoJsOptions = {
+    preload: true,
     autoplay: false,
     controls: true,
     responsive: true,
