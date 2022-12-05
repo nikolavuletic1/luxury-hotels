@@ -1,0 +1,555 @@
+@import "../mixins.scss";
+
+.mySwiper1 .swiper-slide {
+  // border: 3px solid brown;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  background-color: #f8f8f800;
+}
+
+.hot-deals-car {
+  //  border: 3px solid rgb(3, 3, 99);
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  height: 1250px;
+  // margin-top: 120px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+
+  @include respond(first-custom-brake) {
+    max-width: 790px;
+    height: 650px;
+    margin-bottom: -30px;
+  }
+  @include respond(second-custom-brake) {
+    max-width: 600px;
+    height: 750px;
+  }
+  @include respond(third-custom-brake) {
+    max-width: 600px;
+    height: 750px;
+    margin-top: -20px;
+  }
+  @include respond(phone) {
+    max-width: 450px;
+    height: 680px;
+    margin-top: -20px;
+    margin-bottom: -75px;
+  }
+  @include respond(forth-custom-brake) {
+    max-width: 400px;
+    height: 550px;
+    margin-top: -50px;
+  }
+  @include respond(fifth-custom-brake) {
+    max-width: 330px;
+     margin-top: -20px;
+  }
+  @include respond(galaxy-fold) {
+    margin-top: 0;
+    max-width: 330px;
+    height: 530px;
+  }
+}
+
+.hot-deals-car-container {
+  // border: 3px solid rgb(180, 0, 30);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 1140px;
+  max-width: 1100px;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  justify-content: center;
+  @include respond(first-custom-brake) {
+    height: 500px;
+  }
+  @include respond(second-custom-brake) {
+    height: 650px;
+    max-width: 580px;
+  }
+  @include respond(phone) {
+    height: 580px;
+  }
+  @include respond(forth-custom-brake) {
+    height: 460px;
+  }
+  @include respond(fifth-custom-brake) {
+    max-width: 300px;
+  }
+  @include respond(galaxy-fold) {
+    max-width: 300px;
+    height: 360px;
+  }
+}
+
+.hot-deals-section-title {
+  // border: 3px solid rgb(0, 179, 68);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  position: absolute;
+  position: relative;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 2.5rem;
+  display: flex;
+  color: rgb(0, 0, 0);
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+  @include respond(tab-port) {
+    left: 1%;
+  }
+  @include respond(first-custom-brake) {
+    font-size: 2.2rem;
+    margin-top: -30px;
+    margin-bottom: 25px;
+  }
+  @include respond(second-custom-brake) {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  @include respond(third-custom-brake) {
+    left: 1%;
+
+  }
+  @include respond(phone) {
+    left: 1%;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+  }
+  @include respond(fifth-custom-brake) {
+    left: 4%;
+    margin-bottom: 25px;
+    font-size: 1.2rem;
+  }
+  @include respond(galaxy-fold) {
+    left: 0;
+    font-size: 1rem;
+  }
+}
+
+.swiper-button-hot-deals {
+  margin-top: -660px;
+  margin-left: 810px;
+  padding: 0px 8px;
+  cursor: pointer;
+  width: 3.4em;
+  height: 2em;
+  // overflow: visible;
+  position: relative;
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid #b3a17d;
+  border-radius: 10%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  &:hover {
+    background: #b3a17d;
+    svg polyline {
+      stroke: white;
+    }
+  }
+}
+
+.next-hot-deals {
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+
+  margin-top: -1250px;
+  margin-left: 930px;
+  //         margin-top: auto;
+  // margin-left: auto;
+  cursor: pointer;
+  color: #fff;
+  overflow: visible;
+  z-index: 9999;
+  @include respond(first-custom-brake) {
+    margin-top: -600px;
+    margin-left: 725px;
+  }
+  @include respond(second-custom-brake) {
+    margin-top: -730px;
+    margin-left: 530px;
+  }
+  @include respond(third-custom-brake) {
+    margin-top: -730px;
+    margin-left: 530px;
+  }
+
+  @include respond(phone) {
+    margin-top: -660px;
+    margin-left: 390px;
+  }
+  @include respond(forth-custom-brake) {
+    margin-top: -530px;
+    margin-left: 340px;
+  }
+  @include respond(fifth-custom-brake) {
+    margin-top: -530px;
+    margin-left: 240px;
+    width: 2.4em;
+    height: 1.4em;
+  }
+  @include respond(galaxy-fold) {
+    margin-top: -425px;
+    margin-left: 235px;
+  }
+}
+
+.prev-hot-deals {
+  margin-top: -1250px;
+  margin-left: 810px;
+  overflow: visible;
+  z-index: 9999;
+  @include respond(first-custom-brake) {
+    margin-top: -600px;
+    margin-left: 610px;
+  }
+  @include respond(second-custom-brake) {
+    margin-top: -730px;
+    margin-left: 410px;
+  }
+  @include respond(third-custom-brake) {
+    margin-left: 410px;
+  }
+  @include respond(phone) {
+    margin-top: -660px;
+    margin-left: 270px;
+  }
+  @include respond(forth-custom-brake) {
+    margin-top: -530px;
+    margin-left: 220px;
+  }
+  @include respond(fifth-custom-brake) {
+    margin-top: -530px;
+    margin-left: 160px;
+    width: 2.4em;
+    height: 1.4em;
+  }
+  @include respond(galaxy-fold) {
+    margin-top: -425px;
+    margin-left: 155px;
+  }
+}
+
+svg polyline {
+  stroke: #b3a17d;
+  stroke-width: 3;
+  margin-left: 130px;
+  background-color: #000;
+}
+
+.next-hot-deals svg,
+.prev-hot-deals svg {
+  @include respond(fifth-custom-brake) {
+    // margin-left: -4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.swiper-slide-hot-deals {
+  // border: 3px solid purple;
+
+  display: flex !important;
+  flex-direction: column !important;
+  // justify-content:space-between!important;
+  width: 100% !important;
+  height: 50% !important;
+  object-fit: cover !important;
+  // object-fit:scale-down!important;
+  // margin-top: -200px!important;
+  margin-bottom: auto !important;
+  position: relative !important;
+
+  @include respond(first-custom-brake) {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  @include respond(second-custom-brake) {
+    width: 100% !important;
+    height: 180% !important;
+  }
+  @include respond(third-custom-brake) {
+    width: 100% !important;
+    height: 180% !important;
+  }
+
+  @include respond(forth-custom-brake) {
+    width: 100% !important;
+    height: 80% !important;
+  }
+}
+
+.hot-deals-calendar-icon {
+  z-index: 9999999 !important;
+  position: relative;
+  max-width: 25px;
+  height: 25px !important;
+  filter: invert(85%) sepia(11%) saturate(6%) hue-rotate(153deg) brightness(84%)
+    contrast(97%);
+  @include respond(galaxy-fold) {
+    max-width: 20px;
+    height: 20px !important;
+  }
+}
+
+.hot-deals-calendar-user {
+  z-index: 9999999 !important;
+  position: relative;
+  max-width: 25px;
+  height: 25px !important;
+  filter: invert(85%) sepia(11%) saturate(6%) hue-rotate(153deg) brightness(84%)
+    contrast(97%);
+  @include respond(galaxy-fold) {
+    max-width: 20px;
+    height: 20px !important;
+  }
+}
+
+.hot-deals-card-container {
+  border: 2px solid #cfd0c746;
+  // border: 3px solid rgb(0, 89, 255);
+  border-top-style: none;
+  position: absolute;
+  width: 100%;
+  height: 280px;
+  top: 265px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  @include respond(first-custom-brake) {
+    width: 100%;
+    top: 260px;
+    height: 240px;
+  }
+  @include respond(second-custom-brake) {
+    top: 395px;
+  }
+  @include respond(second-custom-brake) {
+    top: 390px;
+  }
+  @include respond(phone) {
+    top: 292px;
+    height: 230px;
+  }
+  @include respond(forth-custom-brake) {
+    top: 169px;
+  }
+  @include respond(galaxy-fold) {
+    top: 130px;
+    height: 210px;
+  }
+}
+
+.hot-deals-calendar-icon-container {
+  // border: 1px solid rgb(231, 135, 10);
+  position: relative;
+  width: 110px;
+  height: 42px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: flex-end;
+  color: #b9b9b9;
+  @include respond(galaxy-fold) {
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
+.hot-deals-user-icon-container {
+  // border: 1px solid rgb(94, 4, 4);
+  position: relative;
+  width: 125px;
+  height: 42px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: #b9b9b9;
+  @include respond(galaxy-fold) {
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
+.hot-deals-card-text {
+  // border: 3px solid rgb(76, 219, 76);
+  width: 85%;
+  height: 170px;
+  bottom: 20px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  @include respond(first-custom-brake) {
+    bottom: 10px;
+    width: 95%;
+  }
+  @include respond(second-custom-brake) {
+    width: 550px;
+  }
+  @include respond(third-custom-brake) {
+    width: 550px;
+  }
+
+  @include respond(phone) {
+    width: 410px;
+  }
+  @include respond(forth-custom-brake) {
+    width: 360px;
+  }
+  @include respond(fifth-custom-brake) {
+    width: 270px;
+    height: 160px;
+  }
+  @include respond(galaxy-fold) {
+    width: 250px;
+    height: 140px;
+    top: 60px;
+  }
+}
+
+.hot-deals-card-text h2 {
+  // border: 3px solid rgb(0, 179, 68);
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: flex-start;
+  text-align: start;
+  font-family: "Libre Caslon Display", serif;
+  font-weight: 100 !important;
+
+  margin: 20px auto 10px 0;
+  @include respond(first-custom-brake) {
+    margin: 0 0 10px;
+  }
+  @include respond(fifth-custom-brake) {
+    font-size: 1.4rem;
+    margin-bottom: 0px;
+  }
+  @include respond(galaxy-fold) {
+    font-size: 1rem;
+  }
+}
+
+.hot-deals-card-text p {
+  @include respond(galaxy-fold) {
+    font-size: 0.8rem;
+  }
+}
+
+.hot-deal-icon-text {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: auto;
+  @include respond(galaxy-fold) {
+    margin-bottom: revert;
+  }
+}
+
+.hot-deals-calendar-icon-wrapper {
+  // border: 3px solid rgb(167, 3, 153);
+  position: absolute;
+  display: flex;
+
+  justify-content: space-between;
+  width: 270px;
+  height: 50px;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 40px;
+  left: 170px;
+
+  @include respond(first-custom-brake) {
+    top: 20px;
+    left: 145px;
+  }
+  @include respond(galaxy-fold) {
+    width: 250px;
+    top: 30px;
+    left: 132px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 280px) {
+  .hot-deals-car-container {
+    width: 275px;
+    // border: 3px solid rgb(0, 255, 55);
+  }
+  @media screen and (min-width: 300px) {
+    .hot-deals-car-container {
+      width: 300px;
+      // border: 3px solid rgb(0, 0, 0);
+    }
+    @media screen and (min-width: 400px) {
+      .hot-deals-car-container {
+        width: 390px;
+        // border: 3px solid rgb(255, 187, 0);
+      }
+      @media screen and (min-width: 500px) {
+        .hot-deals-car-container {
+          width: 440px;
+          // border: 3px solid rgb(174, 0, 255);
+        }
+
+        @media screen and (min-width: 600px) {
+          .hot-deals-car-container {
+            width: 580px;
+            // border: 3px solid rgb(0, 255, 55);
+          }
+
+          @media screen and (min-width: 700px) {
+            .hot-deals-car-container {
+              width: 600px;
+            }
+
+            @media screen and (min-width: 801px) {
+              .hot-deals-car-container {
+                width: 780px;
+                // border: 3px solid red;
+              }
+            }
+
+            @media screen and (min-width: 900px) {
+              .hot-deals-car-container {
+                width: 800px;
+                // border: 3px solid rgb(0, 255, 234);
+              }
+            }
+
+            @media screen and (min-width: 1016px) {
+              .hot-deals-car-container {
+                width: 990px;
+                // border: 3px solid rgb(255, 0, 200);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,196 @@
+.mySwiper1 .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  background-color: #f8f8f8;
+  border: 2px solid rgba(207, 208, 199, 0.2745098039);
+}
+
+.hot-deals-car {
+  display: flex;
+  flex-direction: column;
+  max-width: 1100px;
+  height: 1250px;
+  margin-top: 150px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+}
+
+.hot-deals-car-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 1050px;
+  max-width: 1000px !important;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.hot-deals-section-title {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  position: absolute;
+  position: relative;
+  font-size: 2.5rem;
+  display: flex;
+  top: -50px;
+  left: 50px;
+  bottom: auto;
+  color: rgb(0, 0, 0);
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.swiper-button-hot-deals {
+  padding: 0px 8px;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid #b3a17d;
+  border-radius: 5%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.swiper-button-hot-deals:hover {
+  background: #b3a17d;
+}
+.swiper-button-hot-deals:hover svg polyline {
+  stroke: white;
+}
+
+.next-hot-deals {
+  margin-top: -1200px;
+  margin-left: 950px;
+  cursor: pointer;
+  color: #fff;
+  overflow: visible;
+  z-index: 9999;
+}
+
+.prev-hot-deals {
+  margin-top: -1200px;
+  margin-left: 850px;
+  overflow: visible;
+  z-index: 9999;
+}
+
+.swiper-slide-hot-deals {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+  height: 50% !important;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+  margin-bottom: auto !important;
+  position: relative !important;
+}
+
+.hot-deals-calendar-icon {
+  z-index: 9999999 !important;
+  position: relative;
+  max-width: 25px;
+  height: 25px !important;
+  filter: invert(85%) sepia(11%) saturate(6%) hue-rotate(153deg) brightness(84%) contrast(97%);
+}
+
+.hot-deals-calendar-user {
+  z-index: 9999999 !important;
+  position: relative;
+  max-width: 25px;
+  height: 25px !important;
+  filter: invert(85%) sepia(11%) saturate(6%) hue-rotate(153deg) brightness(84%) contrast(97%);
+}
+
+.hot-deals-card-container {
+  position: relative;
+  width: 400px;
+  height: 250px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.hot-deals-calendar-icon-container {
+  position: relative;
+  width: 110px;
+  height: 42px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: flex-end;
+  color: #b9b9b9;
+}
+
+.hot-deals-user-icon-container {
+  position: relative;
+  width: 125px;
+  height: 42px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: flex-end;
+  color: #b9b9b9;
+}
+
+.hot-deals-card-text {
+  width: 400px;
+  height: 200px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.hot-deals-card-text h2 {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: flex-start;
+  text-align: start;
+  font-family: "Libre Caslon Display", serif;
+  font-weight: 100 !important;
+  margin: 20px auto 10px 0;
+}
+
+.hot-deal-icon-text {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: auto;
+}
+
+.hot-deals-calendar-icon-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 270px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 640px) {
+  .hot-deals-car-container {
+    width: 640px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hot-deals-car-container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .hot-deals-car-container {
+    width: 1024px;
+  }
+}/*# sourceMappingURL=hotDealsCar.css.map */

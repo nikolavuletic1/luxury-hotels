@@ -1,0 +1,15 @@
+/*
+0-600px: phone
+600-900px: Tablet portrait
+900-1200px: Tablet landscape
+[1200-1800px]: Normal styles
+1800px + : Big Dekstop 
+
+
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*//*# sourceMappingURL=mixins.css.map */
