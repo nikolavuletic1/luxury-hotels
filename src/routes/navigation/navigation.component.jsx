@@ -84,7 +84,6 @@ const NavigationBar = () => {
             >
               <SwiperSlide className="swiper-slide-navigation">
                 <img
-                  // src="https://i.postimg.cc/Jzsw6wYV/Carousel-Img1.png"
                   className="swiper-slide-image"
                   src={HomePage1}
                   alt="home"
@@ -92,7 +91,6 @@ const NavigationBar = () => {
               </SwiperSlide>
               <SwiperSlide className="swiper-slide-navigation">
                 <img
-                  // src="https://i.postimg.cc/Jzsw6wYV/Carousel-Img1.png"
                   className="swiper-slide-image"
                   src={HomePage1}
                   alt="home"
@@ -100,7 +98,6 @@ const NavigationBar = () => {
               </SwiperSlide>
               <SwiperSlide className="swiper-slide-navigation">
                 <img
-                  // src="https://i.postimg.cc/Jzsw6wYV/Carousel-Img1.png"
                   className="swiper-slide-image"
                   src={HomePage1}
                   alt="home"
