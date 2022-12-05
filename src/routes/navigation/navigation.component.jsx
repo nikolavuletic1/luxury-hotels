@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 import "../../mixins.scss";
 import "./navigation.styles.scss";
+import HomePage1 from './HomePage1.jpg'
 
 import React from "react";
 import { FaPhoneSquareAlt } from "react-icons/fa";
@@ -19,6 +20,7 @@ import { Pagination } from "swiper";
 
 import DeskTopNavLinks from "./DeskTopNavLinks";
 import MobileNavLinks from "./MobileNaigation";
+
 
 const NavigationBar = () => {
   return (
@@ -80,21 +82,27 @@ const NavigationBar = () => {
               modules={[Pagination]}
               className="mySwiper custommySwiper"
             >
-              <SwiperSlide className="swiper-slide">
+              <SwiperSlide className="swiper-slide-navigation">
                 <img
-                  src="https://i.postimg.cc/Jzsw6wYV/Carousel-Img1.png"
+                  // src="https://i.postimg.cc/Jzsw6wYV/Carousel-Img1.png"
+                  className="swiper-slide-image"
+                  src={HomePage1}
                   alt="home"
                 />
               </SwiperSlide>
-              <SwiperSlide>
+              <SwiperSlide className="swiper-slide-navigation">
                 <img
-                  src="https://i.postimg.cc/Jzsw6wYV/Carousel-Img1.png"
+                  // src="https://i.postimg.cc/Jzsw6wYV/Carousel-Img1.png"
+                  className="swiper-slide-image"
+                  src={HomePage1}
                   alt="home"
                 />
               </SwiperSlide>
-              <SwiperSlide>
+              <SwiperSlide className="swiper-slide-navigation">
                 <img
-                  src="https://i.postimg.cc/Jzsw6wYV/Carousel-Img1.png"
+                  // src="https://i.postimg.cc/Jzsw6wYV/Carousel-Img1.png"
+                  className="swiper-slide-image"
+                  src={HomePage1}
                   alt="home"
                 />
               </SwiperSlide>
