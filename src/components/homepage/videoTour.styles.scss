@@ -51,7 +51,7 @@
   height: 400px;
   margin-top: auto;
   margin-bottom: auto;
-  // margin-left: auto;
+  margin-left: auto;
   margin-right: auto;
   background: rgba(255, 255, 255, 0) !important;
   p {
@@ -114,6 +114,9 @@
   }
   @include respond(forth-custom-brake) {
     font-size: 1.4rem;
+  }
+  @include respond(fifth-custom-brake) {
+    font-size: 1.2rem;
   }
   @include respond(galaxy-fold) {
     margin-top: -5px;

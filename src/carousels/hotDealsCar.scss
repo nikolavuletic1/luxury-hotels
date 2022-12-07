@@ -53,9 +53,9 @@
      margin-top: -20px;
   }
   @include respond(galaxy-fold) {
-    margin-top: 0;
+    margin-top: -50px;
     max-width: 330px;
-    height: 530px;
+    height: 485px;
   }
 }
 
@@ -104,22 +104,26 @@
   align-items: center;
   margin-top: auto;
   margin-bottom: auto;
+  margin-left: 35px;
   font-size: 2.5rem;
   display: flex;
   color: rgb(0, 0, 0);
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+    @include respond(first-custom-brake) {
+      font-size: 2.2rem;
+      margin-top: -30px;
+      margin-bottom: 25px;
+      margin-left: 25px;
+    }
   @include respond(tab-port) {
     left: 1%;
-  }
-  @include respond(first-custom-brake) {
-    font-size: 2.2rem;
-    margin-top: -30px;
-    margin-bottom: 25px;
+    margin-left: 20px;
   }
   @include respond(second-custom-brake) {
     margin-top: 0px;
     margin-bottom: 20px;
+    margin-left: 8px;
   }
   @include respond(third-custom-brake) {
     left: 1%;
@@ -129,6 +133,7 @@
     left: 1%;
     margin-bottom: 20px;
     font-size: 1.8rem;
+    margin-left: 6px;
   }
   @include respond(fifth-custom-brake) {
     left: 4%;
@@ -138,6 +143,7 @@
   @include respond(galaxy-fold) {
     left: 0;
     font-size: 1rem;
+    margin-bottom: 10px;
   }
 }
 
@@ -206,7 +212,7 @@
     height: 1.4em;
   }
   @include respond(galaxy-fold) {
-    margin-top: -425px;
+    margin-top: -395px;
     margin-left: 235px;
   }
 }
@@ -242,7 +248,7 @@
     height: 1.4em;
   }
   @include respond(galaxy-fold) {
-    margin-top: -425px;
+    margin-top: -395px;
     margin-left: 155px;
   }
 }
@@ -357,8 +363,8 @@ svg polyline {
     top: 169px;
   }
   @include respond(galaxy-fold) {
-    top: 130px;
-    height: 210px;
+    top: 132px;
+    height: 180px;
   }
 }
 
@@ -424,7 +430,7 @@ svg polyline {
   }
   @include respond(galaxy-fold) {
     width: 250px;
-    height: 140px;
+    height: 120px;
     top: 60px;
   }
 }
@@ -454,7 +460,7 @@ svg polyline {
 
 .hot-deals-card-text p {
   @include respond(galaxy-fold) {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 }
 
