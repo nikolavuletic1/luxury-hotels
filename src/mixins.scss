@@ -48,9 +48,9 @@ $breakpoint argument choices:
   @if $breakpoint==tab-land {
     @media (max-width:1200px) {@content};
   }
-  // @if $breakpoint==big-desktop {
-  //   @media (min-width:1800px) {@content};
-  // }  
+  @if $breakpoint==desktop {
+    @media (max-width:1500px) {@content};
+  }  
     @if $breakpoint==big-desktop {
     @media (max-width:1800px) {@content};
   }  
