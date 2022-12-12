@@ -5,6 +5,33 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+#root {
+  height: 100%;
+}
+html, body, #app, #app>div {
+  height: 100%
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+div#root {
+  height: 100%; /* remove this line to see div.app is no more 100% height */
+  background-color: indigo;
+  padding: 0 30px;
+}
+
+div.app {
+  height: 100%;
+  background-color: cornsilk;
+}
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }

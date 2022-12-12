@@ -1,14 +1,12 @@
-
 import { useEffect, useState } from "react";
 import { BiArrowFromBottom } from "react-icons/bi";
 import "./scrollToTop.scss";
 
-const ScrollToTop = () => {
+const ScrollToTop = (props) => {
   const [isVisible, setIsVisible] = useState(false);
-  
 
   const toggleVisibility = () => {
-    if (window.pageYOffset > 300) {
+    if (window.pageYOffset > 200) {
       setIsVisible(true);
     } else {
       setIsVisible(false);
@@ -23,8 +21,6 @@ const ScrollToTop = () => {
   };
 
   useEffect(() => {
-
-
     window.addEventListener("Scroll", toggleVisibility);
 
     return () => {
@@ -34,6 +30,8 @@ const ScrollToTop = () => {
 
   return (
     <div className="wrap">
+      {" "}
+      {props.children}
       <div className="top-to-btm">
         {isVisible && (
           <BiArrowFromBottom

@@ -5,17 +5,20 @@ import Car9 from "../../carousels/car9";
 import VideoTour from "../../components/homepage/videoTour.component";
 import HotDealsCar from "../../carousels/hotDealsCar";
 import Footer from "../../components/footer/footer.component";
+import ScrollToTop from "../../components/backtotop/scrollToTop";
+import './home.scss'
+// import "../home/home.scss"
 
 const Home = () => {
   return (
-    <>
+       <ScrollToTop >
       <NavigationBar />
       <Car2 />
       <Car9 />
       <VideoTour />
       <HotDealsCar />
       <Footer />
-    </>
+      </ScrollToTop>
   );
 };
 

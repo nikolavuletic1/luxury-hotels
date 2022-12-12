@@ -6,16 +6,15 @@ import reportWebVitals from "./reportWebVitals";
 import { HashRouter as Router } from "react-router-dom";
 import ScrollToTop from "./components/backtotop/scrollToTop";
 
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  
 
   <Router>
+  <ScrollToTop>
     <App />
-    <ScrollToTop /> 
+    </ScrollToTop>
   </Router>
- 
+  
 );
 
 // If you want to start measuring performance in your app, pass a function
