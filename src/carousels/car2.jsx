@@ -1,4 +1,4 @@
-import { Navigation, Grid } from "swiper";
+import { Navigation, Grid, Lazy } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -55,8 +55,9 @@ export default function Car2() {
           }}
           
   
-        modules={[Navigation ,Grid]}
+        modules={[Navigation ,Grid, Lazy]}
           onSwiper={setSwiper}
+          lazy={true}
           breakpoints={{
             280: {
             slidesPerView: 1,

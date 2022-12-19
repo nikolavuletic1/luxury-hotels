@@ -1,12 +1,14 @@
 import { useEffect, useState } from "react";
-import { BiArrowFromBottom } from "react-icons/bi";
+import {FaAngleDoubleUp} from "react-icons/fa";
+// import { TfiAngleDoubleUp} from "react-icons/tfi";
+
 import "./scrollToTop.scss";
 
 const ScrollToTop = (props) => {
   const [isVisible, setIsVisible] = useState(false);
 
   const toggleVisibility = () => {
-    if (window.pageYOffset > 200) {
+    if (window.pageYOffset > 300) {
       setIsVisible(true);
     } else {
       setIsVisible(false);
@@ -21,25 +23,24 @@ const ScrollToTop = (props) => {
   };
 
   useEffect(() => {
-    window.addEventListener("Scroll", toggleVisibility);
+    window.addEventListener("scroll", toggleVisibility);
 
     return () => {
-      window.removeEventListener("Scroll", toggleVisibility);
+      window.removeEventListener("scroll", toggleVisibility);
     };
   }, []);
 
   return (
-    <div className="wrap">
+    <div className="top-to-btm">
       {" "}
       {props.children}
-      <div className="top-to-btm">
-        {isVisible && (
-          <BiArrowFromBottom
-            onClick={scrollToTop}
-            className="icon-position icon-style"
-          />
-        )}
-      </div>
+      {isVisible && (
+        <FaAngleDoubleUp 
+          onClick={scrollToTop}
+          className="icon-position icon-style" 
+        />
+      )}
+  
     </div>
   );
 };

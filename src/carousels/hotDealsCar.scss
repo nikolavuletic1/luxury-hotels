@@ -262,13 +262,10 @@ svg polyline {
 
 .next-hot-deals svg,
 .prev-hot-deals svg {
-  @include respond(fifth-custom-brake) {
-    // margin-left: -4px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
 }
 
 .swiper-slide-hot-deals {

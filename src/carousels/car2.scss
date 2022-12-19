@@ -221,12 +221,10 @@ svg polyline {
 
 .next svg,
 .prev svg {
-  @include respond(fifth-custom-brake) {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
 }
 
 .swiper-slide .custom-slide-big {
@@ -234,7 +232,7 @@ svg polyline {
   width: 95%;
   height: 126%;
   border-radius: 5px;
-  overflow: visible;
+  // overflow: visible;
   z-index: 9999;
 }
 

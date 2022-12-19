@@ -3,7 +3,11 @@ import { Link } from "react-router-dom";
 
 import "../../mixins.scss";
 import "./navigation.styles.scss";
-import HomePage1 from './HomePage1.jpg'
+// import HomePage1 from './HomePage1.jpg'
+import HomePage2 from './pexels-pok-rie-1655166.jpg'
+import HomePage3 from './pexels-pixabay-33545.jpg'
+import HomePage4 from './pexels-sebastian-arie-voortman-165505.jpg'
+ 
 
 import React from "react";
 import { FaPhoneSquareAlt } from "react-icons/fa";
@@ -68,7 +72,7 @@ const NavigationBar = () => {
               bibendum arcu vitae interdum. Egestas quis ipsum suspendisse
               ultrices gravida dictum. Malesuada proin quam.
             </p>
-            <button className="header-button">TAKE A TOUR</button>
+            <button className="header-button pusle">TAKE A TOUR</button>
           </div>
         </div>
 
@@ -85,21 +89,21 @@ const NavigationBar = () => {
               <SwiperSlide className="swiper-slide-navigation">
                 <img
                   className="swiper-slide-image"
-                  src={HomePage1}
+                  src={HomePage2}
                   alt="home"
                 />
               </SwiperSlide>
               <SwiperSlide className="swiper-slide-navigation">
                 <img
                   className="swiper-slide-image"
-                  src={HomePage1}
+                  src={HomePage3}
                   alt="home"
                 />
               </SwiperSlide>
               <SwiperSlide className="swiper-slide-navigation">
                 <img
                   className="swiper-slide-image"
-                  src={HomePage1}
+                  src={HomePage4}
                   alt="home"
                 />
               </SwiperSlide>

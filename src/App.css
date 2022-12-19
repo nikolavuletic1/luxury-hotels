@@ -5,7 +5,7 @@ html, body, #app, #app>div {
   height: 100%
 } */
 
-.top-to-btm {
+/* .top-to-btm {
   position: relative;
 }
 .icon-position {
@@ -30,8 +30,8 @@ html, body, #app, #app>div {
   background: #fff;
   color: #725034;
   border: 2px solid #725034;
-}
-@keyframes movebtn {
+} */
+/* @keyframes movebtn {
   0% {
     transform: translateY(0px);
   }
@@ -47,6 +47,5 @@ html, body, #app, #app>div {
   100% {
     transform: translateY(0px);
   }
-}
-
+} */
 

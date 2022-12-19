@@ -51,55 +51,53 @@ svg path {
 .swiper-slide-navigation img {
   // border: 3px solid red;
   display: block;
-  
-  width: 100%!important;
-  height: 900px!important;
-  object-fit: cover!important;
+
+  width: 100% !important;
+  height: 900px !important;
+  object-fit: cover !important;
   margin-top: -40px;
   @include respond(big-desktop) {
-    height: 900px!important;
-    width: 100%!important;
+    height: 900px !important;
+    width: 100% !important;
     margin-top: -75px;
-  }  
+  }
   @include respond(desktop) {
-    height: 900px!important;
-    width: 100%!important;
+    height: 900px !important;
+    width: 100% !important;
     margin-top: -120px;
-  } 
+  }
   @include respond(tab-land) {
-    height: 680px!important;
-    width: 100%!important;
+    height: 680px !important;
+    width: 100% !important;
     margin-top: -40px;
-
   }
   @include respond(first-custom-brake) {
-    height: 600px!important;
+    height: 600px !important;
     margin-top: -20px;
   }
   @include respond(tab-port) {
-    height: 470px!important;
+    height: 470px !important;
     // margin-top: -40px;
   }
   @include respond(second-custom-brake) {
-    height: 460px!important;
+    height: 460px !important;
   }
   @include respond(third-custom-brake) {
-    height: 390px!important;
+    height: 390px !important;
   }
   @include respond(phone) {
-    height: 320px!important;
+    height: 320px !important;
   }
   @include respond(forth-custom-brake) {
-    height: 270px!important;
+    height: 270px !important;
     margin-top: 0px;
   }
   @include respond(fifth-custom-brake) {
-    height: 215px!important;
+    height: 215px !important;
   }
   @include respond(galaxy-fold) {
-    height: 185px!important;
+    height: 185px !important;
   }
-  
 }
 
 .swiper-pagination {
@@ -163,7 +161,6 @@ p {
   width: 100%;
   background: rgba(0, 0, 0, 0);
   z-index: 100;
-
 
   @include respond(tab-land) {
     // margin-top: 130px;
@@ -366,6 +363,15 @@ p {
   border: none;
   margin-top: 20px;
   border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    animation: none;
+    background: #fff;
+    color: #b3a17d;
+    border: 2px solid #9c8a65;
+  }
+
   @include respond(phone) {
     margin-top: 5px;
   }
