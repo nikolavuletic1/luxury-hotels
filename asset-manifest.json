@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/luxury-hotels/static/css/main.3a68f621.css",
-    "main.js": "/luxury-hotels/static/js/main.d7a73002.js",
+    "main.css": "/luxury-hotels/static/css/main.5c8ec02f.css",
+    "main.js": "/luxury-hotels/static/js/main.a945eb2b.js",
     "static/js/787.1bf10026.chunk.js": "/luxury-hotels/static/js/787.1bf10026.chunk.js",
     "static/media/VideoTour.mp4": "/luxury-hotels/static/media/VideoTour.fc897ae173db22cf4a04.mp4",
     "static/media/Layer5.png": "/luxury-hotels/static/media/Layer5.c3f02601391afeff0da4.png",
-    "static/media/HomePage1.jpg": "/luxury-hotels/static/media/HomePage1.3aa824c660281eb2b5bc.jpg",
+    "static/media/pexels-pok-rie-1655166.jpg": "/luxury-hotels/static/media/pexels-pok-rie-1655166.b82f4c077236c4a7a390.jpg",
+    "static/media/pexels-pixabay-33545.jpg": "/luxury-hotels/static/media/pexels-pixabay-33545.0d774ff4d6d335bf0e53.jpg",
+    "static/media/pexels-sebastian-arie-voortman-165505.jpg": "/luxury-hotels/static/media/pexels-sebastian-arie-voortman-165505.fa69d75f76c3a6f23923.jpg",
     "static/media/footerb.png": "/luxury-hotels/static/media/footerb.9fcd644a8607c40bb1fd.png",
     "static/media/user.png": "/luxury-hotels/static/media/user.c920752422c11377083e.png",
     "index.html": "/luxury-hotels/index.html",
-    "main.3a68f621.css.map": "/luxury-hotels/static/css/main.3a68f621.css.map",
-    "main.d7a73002.js.map": "/luxury-hotels/static/js/main.d7a73002.js.map",
+    "main.5c8ec02f.css.map": "/luxury-hotels/static/css/main.5c8ec02f.css.map",
+    "main.a945eb2b.js.map": "/luxury-hotels/static/js/main.a945eb2b.js.map",
     "787.1bf10026.chunk.js.map": "/luxury-hotels/static/js/787.1bf10026.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3a68f621.css",
-    "static/js/main.d7a73002.js"
+    "static/css/main.5c8ec02f.css",
+    "static/js/main.a945eb2b.js"
   ]
 }
