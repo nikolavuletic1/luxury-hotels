@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import { Link } from "react-router-dom";
+import NavigationBar1 from './NavigationBar'
 
 import "../../mixins.scss";
 import "./navigation.styles.scss";
@@ -26,22 +27,23 @@ import DeskTopNavLinks from "./DeskTopNavLinks";
 import MobileNavLinks from "./MobileNaigation";
 
 
-const NavigationBar = () => {
+const NavigationComponent = () => {
   return (
     <Fragment>
-      <div className="wrapper">
-        <div className="container">
-          <div className="left-navbar-container">
+    <NavigationBar1 />
+      {/* <div className="wrapper"> */}
+        {/* <div className="container"> */}
+          {/* <div className="left-navbar-container">
             <DeskTopNavLinks />
             <MobileNavLinks />
-          </div>
+          </div> */}
 
-          <div className="logo-container">
+          {/* <div className="logo-container">
             <img src="https://i.postimg.cc/VLZHQ80Z/luxlogo.png" alt="logo" />
             <span>since 1994</span>
-          </div>
+          </div> */}
 
-          <div className="right-navbar-container">
+          {/* <div className="right-navbar-container">
             <div className="phone-number-container">
               <FaPhoneSquareAlt size="1.5em" color="white" />
               <Link className="nav-link" to="/shop">
@@ -59,7 +61,7 @@ const NavigationBar = () => {
                 infoweb@webmail.com
               </Link>
             </div>
-          </div>
+          </div> */}
           <div className="header">
             <h6>THE ULTIMATE LUXURY EXPERIANCE</h6>
             <h1>
@@ -74,7 +76,7 @@ const NavigationBar = () => {
             </p>
             <button className="header-button pusle">TAKE A TOUR</button>
           </div>
-        </div>
+        {/* </div> */}
 
         <>
           <div className="swiper-container">
@@ -111,9 +113,9 @@ const NavigationBar = () => {
           </div>
         </>
 
-      </div>
+      {/* </div> */}
     </Fragment>
   );
 };
 
-export default NavigationBar;
+export default NavigationComponent;

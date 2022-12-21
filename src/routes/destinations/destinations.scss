@@ -1,0 +1,41 @@
+.destination-header {
+  height: 150px;
+  background-color: #b3a17d;
+}
+
+.panorama {
+  position: relative;
+  img {
+    position: relative;
+    border: 3px solid orangered;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+}
+
+.destinations-title {
+  position: absolute;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  left: 30%;
+}
+
+.list-grid-buttons-container {
+    border: 3px solid olivedrab;
+    padding: 15px;
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+}
+
+.list-grid-button {
+    border-color: red;
+    margin-left: 10px;
+}

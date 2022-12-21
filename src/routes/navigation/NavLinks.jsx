@@ -10,10 +10,10 @@ const NavLinks = () => {
     <div className="links">
 
 
-      <Link className="nav-link" to="/shop">
+      <Link className="nav-link" to="/">
         Home
       </Link>
-      <Link className="nav-link" to="/shop">
+      <Link className="nav-link" to="/destinations">
         Destination
       </Link>
       <Link className="nav-link" to="/shop">
