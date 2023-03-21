@@ -3,15 +3,16 @@ import Home from "./routes/home/home.component";
 import Destinations from "./routes/destinations/destinations";
 import "./App.css";
 
+// import { Suspense } from "react";
+
 
 const App = () => {
   return (
-    // <ScrollToTop>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/destinations" element={<Destinations />} />
       </Routes>
-  //  </ScrollToTop>
+
   );
 };
 

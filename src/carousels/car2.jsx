@@ -13,7 +13,7 @@ import { BsGrid} from "react-icons/bs";
 
 import '../mixins.scss'
 import '../carousels/car2.scss'
-import React from "react";
+import {React, useState, useEffect, useRef} from "react";
 
 
 
@@ -21,11 +21,11 @@ export default function Car2() {
 
   // const images = new Array(2).fill({ url: image });
 
-  const [swiper, setSwiper] = React.useState();
-  const prevRef = React.useRef(null);
-  const nextRef = React.useRef(null);
+  const [swiper, setSwiper] = useState();
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (swiper) {
       console.log("Swiper instance:", swiper);
       swiper.params.navigation.prevEl = prevRef.current;
@@ -33,7 +33,7 @@ export default function Car2() {
       swiper.navigation.init();
       swiper.navigation.update();
     }
-  }, []);
+  }, [swiper]);
 
 
 

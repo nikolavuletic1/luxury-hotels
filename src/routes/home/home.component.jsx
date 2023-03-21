@@ -6,8 +6,6 @@ import VideoTour from "../../components/homepage/videoTour.component";
 import HotDealsCar from "../../carousels/hotDealsCar";
 import Footer from "../../components/footer/footer.component";
 import ScrollToTop from "../../components/backtotop/scrollToTop";
-import './home.scss'
-// import "../home/home.scss"
 
 const Home = () => {
   return (

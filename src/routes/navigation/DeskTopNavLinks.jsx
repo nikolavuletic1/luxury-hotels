@@ -2,7 +2,8 @@ import React from "react";
 import "./navigation.styles.scss";
 import NavLinks from "./NavLinks";
 
-const DeskTopNavLinks = () => {
+
+const DeskTopNavLinks = (props) => {
   return (
     <div className="left-navbar-container desktop links">
       <NavLinks />

@@ -1,18 +1,13 @@
-import { Fragment } from "react";
-import { Link } from "react-router-dom";
+import { React, Fragment } from "react";
 import NavigationBar1 from './NavigationBar'
 
 import "../../mixins.scss";
 import "./navigation.styles.scss";
-// import HomePage1 from './HomePage1.jpg'
+
 import HomePage2 from './pexels-pok-rie-1655166.jpg'
 import HomePage3 from './pexels-pixabay-33545.jpg'
 import HomePage4 from './pexels-sebastian-arie-voortman-165505.jpg'
  
-
-import React from "react";
-import { FaPhoneSquareAlt } from "react-icons/fa";
-import { FaEnvelope } from "react-icons/fa";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
@@ -22,10 +17,6 @@ import "swiper/css/grid";
 
 // import required modules
 import { Pagination } from "swiper";
-
-import DeskTopNavLinks from "./DeskTopNavLinks";
-import MobileNavLinks from "./MobileNaigation";
-
 
 const NavigationComponent = () => {
   return (

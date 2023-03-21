@@ -1,8 +1,5 @@
 @import "../../mixins.scss";
 
-#navigationbar {
-  height: 100%;
-}
 html,
 body {
   position: relative;
@@ -19,112 +16,6 @@ body {
   padding: 0;
 }
 
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-}
-
-svg path {
-  stroke: #fefffe !important;
-}
-
-.swiper-slide-navigation img {
-  // border: 3px solid red;
-  display: block;
-
-  width: 100% !important;
-  height: 900px !important;
-  object-fit: cover !important;
-  margin-top: -40px;
-  @include respond(big-desktop) {
-    height: 900px !important;
-    width: 100% !important;
-    margin-top: -75px;
-  }
-  @include respond(desktop) {
-    height: 900px !important;
-    width: 100% !important;
-    margin-top: -120px;
-  }
-  @include respond(tab-land) {
-    height: 680px !important;
-    width: 100% !important;
-    margin-top: -40px;
-  }
-  @include respond(first-custom-brake) {
-    height: 600px !important;
-    margin-top: -20px;
-  }
-  @include respond(tab-port) {
-    height: 470px !important;
-    // margin-top: -40px;
-  }
-  @include respond(second-custom-brake) {
-    height: 460px !important;
-  }
-  @include respond(third-custom-brake) {
-    height: 390px !important;
-  }
-  @include respond(phone) {
-    height: 320px !important;
-  }
-  @include respond(forth-custom-brake) {
-    height: 270px !important;
-    margin-top: 0px;
-  }
-  @include respond(fifth-custom-brake) {
-    height: 215px !important;
-  }
-  @include respond(galaxy-fold) {
-    height: 185px !important;
-  }
-}
-
-.swiper-pagination {
-  bottom: 50px !important;
-
-  @include respond(tab-port) {
-    bottom: 25px !important;
-  }
-  @include respond(third-custom-brake) {
-    bottom: 15px !important;
-  }
-  @include respond(fifth-custom-brake) {
-    display: none;
-  }
-}
-
-.wrapper .swiper-pagination-bullet {
-  background-color: rgba(255, 255, 255, 0);
-  border: 1px solid white;
-  opacity: 1;
-  width: 0.8rem;
-  height: 0.8rem;
-  @include respond(phone) {
-    width: 0.6rem;
-    height: 0.6rem;
-  }
-}
 a {
   font-size: x-small;
 }
@@ -144,6 +35,9 @@ p {
     right: 2%;
     transform: translate(-2%, -50%);
     cursor: pointer;
+    svg path {
+      fill: #311e01 !important;
+    }
   }
   @include respond(fifth-custom-brake) {
     width: 1rem;
@@ -151,74 +45,49 @@ p {
   }
 }
 
-.hamburger-menu-black {
-  display: none;
- 
-
-  @include respond(tab-port) {
-    
-  
-    display: flex;
-    position: absolute;
-    top: 50%;
-    right: 2%;
-    transform: translate(-2%, -50%);
-    cursor: pointer;
-  }
-
-  @include respond(fifth-custom-brake) {
-    width: 1rem;
-    height: 1rem;
-  }
-}
-
-.container {
+.container-black {
   // border: 3px solid rgb(226, 1, 38);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  // align-self: center;
   // margin-top: 70px; original top margin before other pages
-  margin-top: 40px;
-  position: absolute;
-  width: 100%;
+  margin-top: 42px;
+  //  right: 50px;
+  // position: absolute;
+  position: relative;
+
+  // width: 100%;
+
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
   background: rgba(0, 0, 0, 0);
   z-index: 100;
 
-  @include respond(tab-land) {
-    // margin-top: 130px;
-  }
-  @include respond(first-custom-brake) {
-    // margin-top: 100px;
-  }
   @include respond(tab-port) {
     margin-top: 30px;
-    justify-content: flex-start;
   }
   @include respond(phone) {
     margin-top: 10px;
   }
-
   @include respond(galaxy-fold) {
     margin-top: 10px;
   }
 }
 
-.logo-container {
+.logo-container-black {
+  // border: 3px solid red!important;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  max-width: 70px;
-  max-height: 70px;
-  @include respond(tab-port) {
-    margin-left: 10px;
-  }
-  @include respond(phone) {
-    // max-width: 40px;
-    // max-height: 40px;
-  }
+  top: -10px;
+  left: 455px;
+
+  max-width: 50px;
+  max-height: 50px;
+  margin-left: 1%;
+
   @include respond(forth-custom-brake) {
     margin-left: 25px;
   }
@@ -227,8 +96,10 @@ p {
   }
 }
 
-.logo-container img {
-  max-width: 70px;
+.logo-container-black img {
+  max-width: 50px;
+  border: 1px solid black;
+
   @include respond(phone) {
     max-width: 50px;
   }
@@ -240,8 +111,9 @@ p {
   }
 }
 
-.logo-container span {
-  color: white;
+.logo-container-black span {
+  color: rgb(12, 12, 12);
+  text-align: center;
   @include respond(phone) {
     display: none;
   }
@@ -264,9 +136,7 @@ p {
   display: flex;
   flex-direction: column;
   letter-spacing: 3px;
-  // margin-top: 670px;
   margin-top: 300px;
-  // margin-right: 370px;
   margin-left: 270px;
   z-index: 9999;
   color: #fff;
@@ -275,18 +145,15 @@ p {
   text-shadow: 3px 4px 7px rgb(0, 0, 0);
 
   @include respond(tab-land) {
-    // margin-top: 520px;
     margin-top: 270px;
     margin-right: 170px;
   }
   @include respond(first-custom-brake) {
-    // margin-top: 520px;
     margin-top: 175px;
     width: 400px;
   }
 
   @include respond(tab-port) {
-    // margin-top: 380px;
     margin-top: 120px;
     margin-left: 15px;
     width: 310px;
@@ -295,14 +162,12 @@ p {
   }
 
   @include respond(third-custom-brake) {
-    // margin-top: 320px;
     height: 210px;
     width: 49%;
     margin-left: 5px;
   }
 
   @include respond(phone) {
-    // z-index: -1;
     z-index: 98;
     width: 90%;
     height: 12.875rem;
@@ -315,14 +180,11 @@ p {
     margin-left: 0;
   }
   @include respond(forth-custom-brake) {
-    // z-index: -1;
     z-index: 98;
     width: 90%;
     height: 12.875rem;
     left: 49%;
-    // top: 250%;
     margin-top: -44px;
-    // transform: translate(-50%, -187%);
     transform: translate(-50%, 50%);
     text-align: center;
     margin-left: 0;
@@ -332,12 +194,9 @@ p {
     left: 50%;
     transform: translate(-50%, 50%);
     margin-top: -40px;
-    // top: 255%;
-    // transform: translate(-50%, -208%);
     height: 10.875rem;
   }
   @include respond(galaxy-fold) {
-    // top: 310%;
     margin-top: -35px;
     height: 8.875rem;
   }
@@ -405,16 +264,17 @@ p {
   height: 40px;
   background: #b3a17d;
   color: #fff;
-  border: none;
+  // border: 1px solid #9c8a65;
+  border: 1px solid #b3a17d;
   margin-top: 20px;
   border-radius: 3px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 
   &:hover {
     animation: none;
     background: #fff;
     color: #b3a17d;
-    border: 2px solid #9c8a65;
+    border: 1px solid #9c8a65;
   }
 
   @include respond(tab-land) {
@@ -442,13 +302,11 @@ p {
   }
 }
 
-
-
-.nav-link {
+.navlink {
   margin-left: 15px;
   align-items: center;
   text-shadow: 3px 4px 7px rgba(81, 67, 21, 0.8);
-  color: whitesmoke;
+  font-size: 5rem;
   @include respond(galaxy-fold) {
     margin-left: 5px;
     font-size: 0.5rem;
@@ -534,6 +392,34 @@ p {
   }
 }
 
+.nav-link-black {
+  color: rgb(12, 12, 12);
+  margin-left: 15px;
+  align-items: center;
+  text-shadow: 3px 4px 7px rgba(81, 67, 21, 0.8);
+  @include respond(fifth-custom-brake) {
+    margin-left: 5px;
+    font-size: 0.5rem;
+  }
+}
+
+.nav-link-black::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #b3a17d;
+  transition: width 0.4s;
+  @include respond(phone) {
+    background: #363130;
+  }
+}
+
+.nav-link-black:hover:after {
+  width: 100%;
+  transition: width 0.4s;
+}
+
 .links-black {
   display: flex;
   @include respond(tab-port) {
@@ -541,74 +427,73 @@ p {
     justify-content: space-around;
     align-items: center;
     position: absolute;
-    width: 96%;
-    height: 270px;
-    background-color: #00ee4fd0;
-    top: 90px;
-    right: 3%;
+    width: 98%;
+    height: 276px;
+    background-color: #b3a17d;
+    top: 95px;
+    right: 1.1%;
     a {
       font-size: 1.2rem;
     }
   }
-  // @include respond(second-custom-brake) {
-  //   right: 3%;
-  // }
 
   @include respond(third-custom-brake) {
-    height: 210px;
-    top: 90px;
-    width: 48%;
-    right: 2%;
-    // right: 1.5%;
+    height: 281px;
+    top: 92px;
+    width: 97%;
+    right: 1.5%;
   }
 
   @include respond(phone) {
-    width: 96%;
-    height: 220px;
-    top: 55px;
-    background-color: #b3a17d;
-    right: 2.5%;
+    width: 98%;
+    height: 280px;
+    top: 83px;
+    right: 1%;
     a {
       font-size: 1.2rem;
     }
   }
 
   @include respond(forth-custom-brake) {
-    width: 96%;
+    width: 99%;
     height: 210px;
-    top: 41px;
+    top: 42px;
+    right: 0.5%;
     a {
       font-size: 0.8rem;
     }
   }
   @include respond(fifth-custom-brake) {
-    width: 96%;
-    height: 165px;
-    top: 35px;
+    width: 99%;
+    height: 140px;
+    top: 42px;
   }
   @include respond(galaxy-fold) {
-    width: 96%;
+    width: 98%;
     height: 140px;
-    top: 27px;
+    top: 42px;
     a {
       font-size: 0.7rem;
     }
   }
 }
 
-.left-navbar-container .desktop {
-
-  margin-left: 140px;
+.left-navbar-container-black .desktop {
+  a {
+    color: #000;
+  }
+  margin-left: -180px;
   width: 310px;
   display: flex;
   align-items: center;
   justify-content: space-around;
 
+  @include respond(first-custom-brake) {
+    margin-left: -80px;
+  }
+
   @include respond(tab-port) {
     display: none;
-  }
-  @include respond(first-custom-brake) {
-    margin-left: 90px;
   }
 }
 
@@ -621,16 +506,16 @@ p {
   }
 }
 
+.mobile-black {
+  svg path {
+    stroke: #b3a17dd0 !important;
+  }
+}
+
 .left-navbar-container .desktop {
   @include respond(tab-port) {
     display: none;
   }
-}
-
-.left-navbar-container1 .desktop {
- a {
-  color: rgb(12, 12, 12);
- }
 }
 
 .right-navbar-container {
@@ -649,13 +534,18 @@ p {
     justify-content: space-between;
   }
 
-  @include respond(first-custom-brake) {
-    margin-right: 90px;
-  }
+  // @include respond(first-custom-brake) {
+  //   margin-right: 10px;
+  // }
 
   @include respond(forth-custom-brake) {
-    width: 264px;
-  
+    width: 263px;
+    margin-left: 15px;
+  }
+  @include respond(fifth-custom-brake) {
+    // display: none;
+    margin-left: 3px;
+    width: 195px;
   }
 
   @include respond(galaxy-fold) {
@@ -675,7 +565,6 @@ p {
   @include respond(galaxy-fold) {
     font-size: 0.5em;
   }
-
 }
 
 .mail-container {
@@ -690,4 +579,8 @@ p {
     padding-left: 0px;
     font-size: 0.5em;
   }
+}
+
+a {
+  color: rgb(128, 0, 0);
 }

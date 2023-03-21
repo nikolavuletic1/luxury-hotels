@@ -127,6 +127,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
+  transition: all 0.2s ease-in-out;
 
   &:hover {
     background: #b3a17d;
