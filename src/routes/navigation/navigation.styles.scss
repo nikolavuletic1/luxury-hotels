@@ -446,10 +446,14 @@ p {
   align-items: center;
   text-shadow: 3px 4px 7px rgba(81, 67, 21, 0.8);
   color: whitesmoke;
-  @include respond(galaxy-fold) {
-    margin-left: 5px;
+  @include respond(fifth-custom-brake) {
+    margin-left: 4px;
     font-size: 0.5rem;
   }
+  // @include respond(galaxy-fold) {
+  //   margin-left: 5px;
+  //   font-size: 0.5rem;
+  // }
 }
 
 .nav-link::after {
@@ -517,6 +521,7 @@ p {
     width: 96%;
     height: 165px;
     top: 35px;
+
   }
   @include respond(galaxy-fold) {
     width: 96%;

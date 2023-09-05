@@ -29,7 +29,8 @@
     height: 560px;
   }
   @include respond(fifth-custom-brake) {
-    height: 575px;
+    // height: 575px;
+    height: 540px;
   }
   @include respond(galaxy-fold) {
     height: 593px;
