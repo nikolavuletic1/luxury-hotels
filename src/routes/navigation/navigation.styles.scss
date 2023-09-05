@@ -332,12 +332,9 @@ p {
     left: 50%;
     transform: translate(-50%, 50%);
     margin-top: -40px;
-    // top: 255%;
-    // transform: translate(-50%, -208%);
     height: 10.875rem;
   }
   @include respond(galaxy-fold) {
-    // top: 310%;
     margin-top: -35px;
     height: 8.875rem;
   }
@@ -488,16 +485,13 @@ p {
       font-size: 1.2rem;
     }
   }
-  // @include respond(second-custom-brake) {
-  //   right: 3%;
-  // }
+
 
   @include respond(third-custom-brake) {
     height: 210px;
     top: 90px;
     width: 48%;
     right: 2%;
-    // right: 1.5%;
   }
 
   @include respond(phone) {
@@ -550,16 +544,13 @@ p {
       font-size: 1.2rem;
     }
   }
-  // @include respond(second-custom-brake) {
-  //   right: 3%;
-  // }
+
 
   @include respond(third-custom-brake) {
     height: 210px;
     top: 90px;
     width: 48%;
     right: 2%;
-    // right: 1.5%;
   }
 
   @include respond(phone) {

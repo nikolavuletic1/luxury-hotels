@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import {FaAngleDoubleUp} from "react-icons/fa";
-// import { TfiAngleDoubleUp} from "react-icons/tfi";
+
 
 import "./scrollToTop.scss";
 

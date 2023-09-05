@@ -22,37 +22,7 @@ const NavigationComponent = () => {
   return (
     <Fragment>
     <NavigationBar1 />
-      {/* <div className="wrapper"> */}
-        {/* <div className="container"> */}
-          {/* <div className="left-navbar-container">
-            <DeskTopNavLinks />
-            <MobileNavLinks />
-          </div> */}
-
-          {/* <div className="logo-container">
-            <img src="https://i.postimg.cc/VLZHQ80Z/luxlogo.png" alt="logo" />
-            <span>since 1994</span>
-          </div> */}
-
-          {/* <div className="right-navbar-container">
-            <div className="phone-number-container">
-              <FaPhoneSquareAlt size="1.5em" color="white" />
-              <Link className="nav-link" to="/shop">
-                Phone Number
-                <br />
-                +381 63 123 456
-              </Link>
-            </div>
-
-            <div className="mail-container">
-              <FaEnvelope size="1.5em" color="white" />
-              <Link className="nav-link" to="/shop">
-                Email
-                <br />
-                infoweb@webmail.com
-              </Link>
-            </div>
-          </div> */}
+    
           <div className="header">
             <h6>THE ULTIMATE LUXURY EXPERIANCE</h6>
             <h1>
@@ -67,7 +37,7 @@ const NavigationComponent = () => {
             </p>
             <button className="header-button pusle">TAKE A TOUR</button>
           </div>
-        {/* </div> */}
+    
 
         <>
           <div className="swiper-container">
@@ -104,7 +74,6 @@ const NavigationComponent = () => {
           </div>
         </>
 
-      {/* </div> */}
     </Fragment>
   );
 };

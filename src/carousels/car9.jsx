@@ -75,8 +75,8 @@ export default function Car9() {
                 spaceBetween: 30,
               },
             }}
-            className="firstSwiper"
-          >
+      
+            className="firstSwiper"    >
             <SwiperSlide className="custom-slide-new">
               <img
                 src="https://i.postimg.cc/Fsf0JKNs/apartman1.png"

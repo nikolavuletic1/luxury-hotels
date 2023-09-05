@@ -1,0 +1,1353 @@
+@import "../../mixins.scss";
+
+
+
+
+.hotels-navigation-container {
+  // border: 3px solid slateblue;
+  width: 360px;
+  display: flex;
+  justify-content: space-around;
+  color: black !important;
+  font-size: 15px !important;
+  // margin-top: 30px;
+  padding-left: 0 !important;
+
+  @include respond(forth-custom-brake) {
+    margin-top: 0px;
+  }
+
+  @include respond(fifth-custom-brake) {
+    justify-content: space-between;
+    width: 330px;
+  }
+
+  @include respond(galaxy-fold) {
+    flex-direction: column;
+    margin-top: 0;
+    font-size: none !important;
+    padding-left: 0 !important;
+    width: 260px;
+
+  }
+
+  a {
+    color: black !important;
+    padding: 0 !important;
+    margin: 0 !important;
+
+  }
+}
+
+.hotels-navigation-wrapper {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.nav-link-hotels {
+  margin-left: 0 !important;
+
+  // @include respond(galaxy-fold) {
+  //   padding-left: 5px!important;
+  //  }
+}
+
+.nav-link-hotels::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #b3a17d;
+  transition: width 0.4s;
+}
+
+
+.hotels-main-wrapper {
+  // border: 3px solid purple;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  // width: 100%;
+}
+
+.hotels-content-container {
+  // border: 3px solid red;
+  position: relative;
+  display: grid;
+  // grid-template-rows: 100px 150px 150px 150px 300px;
+  grid-template-rows: 0px 150px 150px 150px 300px;
+  grid-template-columns: 50% 50%;
+  // grid-template-columns: repeat(2, 1fr)!important;
+  // grid-template-columns:1fr 1fr;
+  max-width: 1000px;
+  // height: 950px;
+  height: 790px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include respond(first-custom-brake) {
+    max-width: 800px;
+    height: 880px;
+    // grid-template-rows: 80px 150px 150px 150px 300px 300px;
+    // grid-template-rows: 80px 178px 222px 152px 300px 300px;
+    grid-template-rows: 0px 178px 222px 152px 300px 300px
+  }
+
+  @include respond(second-custom-brake) {
+    max-width: 700px;
+  }
+
+  @include respond(third-custom-brake) {
+    max-width: 600px;
+    // grid-template-rows: 100px 150px 150px 250px 150px 350px 300px;
+    grid-template-rows: 0px 150px 150px 250px 150px 350px 300px;
+    grid-template-columns: 50% 50%;
+    // height: 1400px;
+    height: 1290px;
+  }
+
+  @include respond(phone) {
+    max-width: 500px;
+    height: 1305px;
+  }
+
+  @include respond(forth-custom-brake) {
+    max-width: 400px;
+    // grid-template-rows: 200px 150px 100px 250px 150px 330px 240px;
+    grid-template-rows: 80px 150px 100px 250px 150px 330px 240px;
+    height: 1195px;
+
+  }
+
+  @include respond(fifth-custom-brake) {
+    max-width: 350px;
+    height: 1220px;
+  }
+
+  @include respond(galaxy-fold) {
+    max-width: 270px;
+    // grid-template-rows: 100px 200px 150px 250px 150px 330px 240px;
+    grid-template-rows: 50px 200px 150px 250px 150px 330px 240px;
+    height: 1370px;
+  }
+}
+
+.line {
+  display: flex;
+  width: 980px;
+  height: 2px;
+  background-color: rgba(128, 128, 128, 0.192);
+  margin-top: -17px;
+  margin-left: 7px;
+
+  @include respond(first-custom-brake) {
+    max-width: 800px;
+  }
+
+  @include respond(second-custom-brake) {
+    max-width: 700px;
+  }
+
+  @include respond(third-custom-brake) {
+    max-width: 600px;
+  }
+
+  @include respond(phone) {
+    max-width: 500px;
+  }
+
+  @include respond(forth-custom-brake) {
+    max-width: 390px;
+  }
+
+  @include respond(fifth-custom-brake) {
+    max-width: 340px;
+  }
+
+  @include respond(galaxy-fold) {
+    max-width: 260px;
+  }
+}
+
+.hotels-title {
+  font-size: 2.5rem;
+  word-spacing: -15px;
+  color: rgb(0, 0, 0);
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace !important;
+
+  @include respond(first-custom-brake) {
+
+    font-size: 2.2rem;
+
+  }
+
+  @include respond(tab-port) {
+    // left: 20px;
+  }
+  @include respond(tab-port) {
+    // left: 20px;
+  }
+  @include respond(phone) {
+    font-size: 1.8rem;
+  }
+    @include respond(third-custom-brake) {
+      word-spacing: -8px;
+  }
+
+  @include respond(forth-custom-brake) {
+    margin-top: -63px;
+    height: 15px;
+    font-size: 1.4rem;
+  }
+
+  @include respond(fifth-custom-brake) {
+    height: 10px;
+    font-size: 1.2rem;
+
+  }
+
+  @include respond(galaxy-fold) {
+    height: 8px;
+    font-size: 1rem;
+  }
+
+
+}
+
+.hotels-content-item-1 {
+  // border: 3px solid orange;
+  grid-row: 2/3;
+  grid-column: 1/2;
+
+  @include respond(first-custom-brake) {
+    grid-column: 1/3;
+  }
+
+  @include respond(third-custom-brake) {
+    grid-row: 2/3 !important;
+    grid-column: 1/3 !important;
+  }
+
+  @include respond(fifth-custom-brake) {
+    margin-top: -10px;
+  }
+
+  @include respond(galaxy-fold) {
+    margin-top: 15px;
+  }
+}
+
+.hotels-content-item-2 {
+  // border: 3px solid green;
+  grid-row: 3/4;
+  grid-column: 1/2;
+
+  @include respond(third-custom-brake) {
+    grid-row: 3/4 !important;
+    grid-column: 1/3 !important;
+  }
+
+  @include respond(fifth-custom-brake) {
+    margin-top: -10px;
+  }
+
+  @include respond(galaxy-fold) {
+    margin-top: 5px;
+  }
+}
+
+.hotels-content-item-3 {
+  // border: 3px solid magenta;
+  grid-row: 2/4;
+  grid-column: 2/3;
+
+  // height: auto;
+  // width: auto;
+  @include respond(first-custom-brake) {
+    grid-row: 3/4;
+  }
+
+  @include respond(third-custom-brake) {
+    grid-row: 4/5;
+    grid-column: 1/3;
+
+    @include respond(galaxy-fold) {
+      height: 210px;
+    }
+  }
+
+
+}
+
+.hotels-content-item-4 {
+  // border: 3px solid purple;
+  grid-row: 4/5;
+  grid-column: 1/3;
+
+  @include respond(third-custom-brake) {
+    grid-row: 5/6;
+    grid-column: 1/3;
+
+    @include respond(forth-custom-brake) {
+      margin-top: 30px;
+    }
+
+    @include respond(galaxy-fold) {
+      margin-top: -5px;
+    }
+  }
+}
+
+.hotels-content-item-5 {
+  // border: 3px solid rosybrown;
+  grid-row: 5/7;
+  grid-column: 1/2;
+
+  @include respond(third-custom-brake) {
+    grid-row: 7/8;
+    grid-column: 1/3;
+
+    @include respond(forth-custom-brake) {
+      margin-top: -75px;
+    }
+  }
+
+  @include respond(galaxy-fold) {
+    margin-top: -72px;
+  }
+}
+
+
+.hotels-content-item-6 {
+  // border: 3px solid rosybrown;
+  padding: 10px;
+  grid-row: 5/7;
+  grid-column: 2/3;
+
+  @include respond(third-custom-brake) {
+    grid-row: 6/7;
+    grid-column: 1/3;
+
+    @include respond(forth-custom-brake) {
+      margin-top: -40px;
+    }
+  }
+}
+
+.hotels-picture {
+  // border: 3px solid orangered;
+  padding: 10px;
+
+  width: 100%;
+  height: 100%;
+
+  @include respond(forth-custom-brake) {
+    margin-top: -25px;
+    padding: 10px 5px;
+  }
+}
+
+.mapDiv {
+  height: 300px;
+  width: 100%;
+
+  @include respond(third-custom-brake) {
+    width: 84%;
+    height: 333px;
+    margin: auto;
+  }
+
+  @include respond(forth-custom-brake) {
+    width: 94%;
+    height: 250px;
+  }
+
+  @include respond(forth-custom-brake) {
+    width: 94%;
+    height: 210px;
+  }
+}
+
+
+.hotels-panorama {
+  position: relative;
+  width: 100%;
+
+  img {
+    position: relative;
+    // border: 3px solid orangered;
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+    margin-top: -10px;
+
+    @include respond(tab-port) {
+      margin-top: -20px;
+    }
+
+    @include respond(phone) {
+      margin-top: -50px;
+    }
+
+    @include respond(forth-custom-brake) {
+      margin-top: -90px;
+      height: 215px;
+    }
+
+    @include respond(fifth-custom-brake) {
+      height: 145px;
+    }
+  }
+}
+
+
+
+
+// *****************************HOW TO GET THERE********************************
+
+
+
+.how-to-get-there-container {
+  // border: 3px solid rgb(3, 80, 61);
+  position: relative;
+  display: grid;
+  grid-template-rows: 150px 150px 150px 150px 300px;
+  grid-template-columns: 50% 50%;
+  // grid-template-columns: repeat(2, 1fr)!important;
+  // grid-template-columns:1fr 1fr;
+  width: 1000px;
+  height: 620px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include respond(first-custom-brake) {
+    max-width: 800px;
+  }
+
+  @include respond(second-custom-brake) {
+    max-width: 700px;
+  }
+
+  @include respond(third-custom-brake) {
+    max-width: 600px;
+    grid-template-rows: 150px 150px 150px 200px 150px 350px 300px;
+    grid-template-columns: 50% 50%;
+    height: 905px;
+  }
+
+  @include respond(phone) {
+    max-width: 500px;
+  }
+
+  @include respond(forth-custom-brake) {
+    max-width: 400px;
+    grid-template-rows: 150px 150px 150px 80px 150px 350px 300px;
+    height: 830px;
+
+  }
+
+  @include respond(fifth-custom-brake) {
+    max-width: 350px;
+  }
+
+  @include respond(galaxy-fold) {
+    max-width: 270px;
+    grid-template-rows: 200px 200px 150px 80px 150px 330px 240px;
+    height: 1010px;
+  }
+}
+
+.how-to-get-there-item-1 {
+  // border: 3px solid purple;
+  grid-row: 1/2;
+  grid-column: 1/3;
+}
+
+.how-to-get-there-item-2 {
+  // border: 3px solid rgb(0, 77, 128);
+  grid-row: 2/3;
+  grid-column: 1/3;
+}
+
+.how-to-get-there-item-3 {
+  // border: 3px solid rgb(211, 180, 4);
+  grid-row: 3/5;
+  grid-column: 1/2;
+
+  @include respond(third-custom-brake) {
+    grid-row: 5/7;
+    grid-column: 1/3;
+  }
+}
+
+.how-to-get-there-item-4 {
+
+  // border: 3px solid rgb(11, 211, 4);
+  @include respond(third-custom-brake) {
+    grid-row: 3/5;
+    grid-column: 1/3;
+  }
+}
+
+.how-to-get-there-title {
+  font-size: 2.5rem;
+  color: rgb(0, 0, 0);
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace !important;
+
+  @include respond(first-custom-brake) {
+    font-size: 2.2rem;
+  }
+
+  @include respond(phone) {
+    font-size: 1.8rem;
+  }
+
+  @include respond(forth-custom-brake) {
+    margin-top: 0px;
+    height: 15px;
+    font-size: 1.4rem;
+  }
+
+  @include respond(fifth-custom-brake) {
+    height: 10px;
+    font-size: 1.2rem;
+  }
+
+  @include respond(galaxy-fold) {
+    height: 8px;
+    font-size: 1rem;
+  }
+}
+
+
+// *****************************HOTEL X********************************
+
+.hotelsX-container {
+  // border: 3px solid rgb(185, 0, 71);
+  position: relative;
+  display: grid;
+  grid-template-rows: 100px 100px 100px 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px;
+  grid-template-columns: 30% 63%;
+  grid-column-gap: 57px;
+  // grid-template-columns: repeat(2, 1fr)!important;
+  // grid-template-columns:1fr 1fr;
+  width: 1000px;
+  height: 1656px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  p {
+    margin: 5px 30px 0 30px;
+  }
+  h4 {
+    margin: 0 0 0 30px; 
+    color: #b3a17d;
+  }
+
+  @include respond(first-custom-brake) {
+    max-width: 800px;
+  }
+
+  @include respond(second-custom-brake) {
+    max-width: 700px;
+    grid-column-gap: 48px;
+    height: 1670px;
+  }
+
+  @include respond(third-custom-brake) {
+    max-width: 600px;
+    grid-template-columns: 100%;
+    height: 2000px;
+    grid-template-rows: 100px 100px 100px 100px 125px 67px 92px 66px 60px 226px 150px 128px 123px 136px 92px;
+  }
+
+  @include respond(phone) {
+    max-width: 500px;
+    margin-top: 20px;
+    height: 2020px;
+  }
+
+  @include respond(forth-custom-brake) {
+    max-width: 400px;
+    height: 1890px;
+
+  }
+
+  @include respond(fifth-custom-brake) {
+    max-width: 328px;
+    height: 2050px;
+  }
+
+  @include respond(galaxy-fold) {
+    max-width: 270px;
+    height: 2095px;
+    margin-top: 3px;
+  }
+}
+
+.line-hotelx {
+  display: flex;
+  max-width: 99%;
+  height: 2px;
+  background-color: rgba(128, 128, 128, 0.192);
+  margin-top: 0;
+  margin-left: 0;
+
+  @include respond(forth-custom-brake) {
+    margin-top: -57px;
+  }
+}
+
+
+.line-hotelx-2 {
+  // display: flex;
+  width: 99%;
+  height: 2px;
+  background-color: rgba(128, 128, 128, 0.192);
+  margin-top: 0;
+  margin-left: 0;
+  margin-bottom: 110px;
+}
+
+.hotelX-button {
+  width: 230px;
+  width: 99%;
+  height: 60px;
+  background: #b3a17d;
+  color: #fff;
+  // border: 1px solid #9c8a65;
+  border: 1px solid #b3a17d;
+  margin-top: 20px;
+  border-radius: 3px;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    animation: none;
+    background: #fff;
+    color: #b3a17d;
+    border: 1px solid #9c8a65;
+  }
+
+
+  @include respond(third-custom-brake) {
+    width: 558px;
+    height: 40px;
+  }
+  @include respond(phone) {
+    width: 438px;
+  }
+  @include respond(forth-custom-brake) {
+    width: 370px;
+  }
+
+  @include respond(fifth-custom-brake) {
+      width: 312px;
+  }
+
+  @include respond(galaxy-fold) {
+    width: 240px;
+    height: 30px;
+  }
+}
+
+
+.hotelsX-item-1 {
+  // border: 3px solid rgb(196, 143, 0);
+  grid-row: 1/2;
+  grid-column: 1/2;
+  margin-left: 30px;
+
+  .hotels-title {
+    @include respond(first-custom-brake) {
+      font-size: 2rem;
+    }
+    @include respond(tab-port) {
+      font-size: 1.9rem;
+    }
+  }
+  @include respond(third-custom-brake) {
+    grid-row: 5/6;
+    grid-column: 1/3;
+    margin-top: 50px;
+    margin-left: 0px;
+    display: grid;
+    width: 93%;
+    height: 60px;
+  justify-content: center;
+  margin-left: 0;
+  }
+  @include respond(phone) {
+    margin-top: 10px;
+    width: 91%;
+  }
+  @include respond(forth-custom-brake) {
+    width: 89%;
+    margin-top: -28px;
+  }
+  @include respond(fifth-custom-brake) {
+    margin-top: -98px;
+  }
+  @include respond(galaxy-fold) {
+    margin-top: -109px;
+    width: 85%;
+  }
+
+}
+
+.hotelsX-item-2 {
+  // border: 3px solid rgb(5, 138, 76);
+  grid-row: 2/3;
+  grid-column: 1/2;
+  margin-top: -25px;
+  @include respond(second-custom-brake) {
+    margin-top: -50px;
+  }
+  @include respond(third-custom-brake) {
+    grid-row: 6/7;
+    grid-column: 1/3;
+    margin-top: -27px;
+    height: 50px;
+    width: 93%;
+  }
+  @include respond(phone) {
+    margin-top: -55px;
+    width: 91%;
+  }
+  @include respond(forth-custom-brake) {
+    width: 89%;
+    margin-top: -170px;
+  }
+  @include respond(fifth-custom-brake) {
+    margin-top: -242px;
+  }
+  @include respond(galaxy-fold) {
+    margin-top: -255px;
+    width: 85%;
+  }
+}
+
+.hotelsX-item-3 {
+  // border: 3px solid rgb(124, 9, 9);
+  grid-row: 3/4;
+  grid-column: 1/2;
+  margin-top: -50px;
+  @include respond(first-custom-brake) {
+    margin-top: -32px;
+  }
+  @include respond(second-custom-brake) {
+    margin-top: -45px;
+  }
+  @include respond(third-custom-brake) {
+    grid-row: 7/8;
+    grid-column: 1/3;
+    height: 40px;
+    width: 93%;
+    @include respond(phone) {
+      margin-top: -57px;
+      width: 91%;
+    }
+    @include respond(forth-custom-brake) {
+      width: 89%;
+      margin-top: -181px;
+    }
+    @include respond(fifth-custom-brake) {
+      margin-top: -238px;
+    }
+    @include respond(galaxy-fold) {
+      margin-top: -253px;
+      width: 85%;
+    }
+  }
+}
+
+.hotelsX-item-4 {
+  // border: 3px solid rgb(0, 82, 204);
+  grid-row: 4/5;
+  grid-column: 1/2;
+  margin-top: -105px;
+  @include respond(first-custom-brake) {
+    margin-top: -75px;
+  }
+  @include respond(second-custom-brake) {
+    margin-top: -90px;
+  }
+  @include respond(third-custom-brake) {
+    grid-row: 8/9;
+    grid-column: 1/3;
+    margin-top: -87px;
+    height: 60px;
+    width: 93%;
+  }
+  @include respond(phone) {
+    margin-top: -102px;
+    width: 91%;
+  }
+  @include respond(forth-custom-brake) {
+    width: 89%;
+    margin-top: -230px;
+  }
+  @include respond(fifth-custom-brake) {
+    margin-top: -284px;
+  }
+  @include respond(galaxy-fold) {
+    margin-top: -304px;
+    width: 85%;
+  }
+}
+
+.hotelsX-item-5 {
+  // border: 3px solid rgb(10, 150, 5);
+  grid-row: 5/6;
+  grid-column: 1/2;
+  margin-top: -151px;
+  @include respond(first-custom-brake) {
+    margin-top: -78px;
+  }
+ 
+  @include respond(third-custom-brake) {
+    grid-row: 9/10;
+    grid-column: 1/3;
+    margin-top: -86px;
+    height: 40px;
+    width: 93%;
+  }
+  @include respond(phone) {
+    margin-top: -87px;
+    width: 91%;
+  }
+  @include respond(forth-custom-brake) {
+    width: 89%;
+    margin-top: -210px;
+  }
+  @include respond(fifth-custom-brake) {
+    margin-top: -242px;
+  }
+  @include respond(galaxy-fold) {
+    margin-top: -253px;
+    width: 85%;
+  }
+}
+
+.hotelsX-item-6 {
+  // border: 3px solid rgb(4, 3, 80);
+  grid-row: 6/7;
+  grid-column: 1/2;
+  margin-top: -197px;
+  @include respond(first-custom-brake) {
+    margin-top: -66px;
+  }
+  @include respond(second-custom-brake) {
+    margin-top: -60px;
+  }
+  @include respond(third-custom-brake) {
+    grid-row: 10/11;
+    grid-column: 1/3;
+    margin-top: -80px;
+    height: 90px;
+    width: 93%;
+  }
+  @include respond(phone) {
+    margin-top: -68px;
+    width: 91%;
+    }
+  
+  @include respond(forth-custom-brake) {
+    width: 89%;
+    margin-top: -182px;
+  }
+  @include respond(fifth-custom-brake) {
+    margin-top: -195px;
+  }
+  @include respond(galaxy-fold) {
+    width: 85%;
+  }
+}
+
+.hotelsX-item-7 {
+  // border: 3px solid rgb(94, 17, 158);
+  grid-row: 1/5;
+  grid-column: 2/3;
+  @include respond(third-custom-brake) {
+    grid-row: 1/5;
+    grid-column: 1/3;
+    display: grid;
+    justify-content: center;
+    width: 91%;
+    height: 610px;
+  }
+  @include respond(forth-custom-brake) {
+    width: 89%;
+    height: 510px;
+  }
+  @include respond(fifth-custom-brake) {
+    width: 87%;
+    height: 477px;
+  }
+  @include respond(galaxy-fold) {
+    width: 85%;
+    height: 477px;
+  }
+}
+
+.hotelsX-item-8 {
+  // border: 3px solid rgb(255, 102, 0);
+grid-row: 7/8;
+grid-column: 1/2;
+margin-top: -200px;
+@include respond(first-custom-brake) {
+  margin-top: -60px;
+}
+@include respond(second-custom-brake) {
+  margin-top: 0px;
+}
+@include respond(third-custom-brake) {
+  grid-row: 11/12;
+  grid-column: 1/3;
+  display: grid;
+  justify-content: center;
+  width: 93%;
+  height: 80px;
+  // margin-top: -634px;
+  margin-top: -220px;
+}
+@include respond(phone) {
+  width: 91%;
+}
+@include respond(forth-custom-brake) {
+  width: 89%;
+  margin-top: -310px;
+}
+@include respond(fifth-custom-brake) {
+  width: 88%;
+  margin-top: -300px;
+}
+@include respond(galaxy-fold) {
+  width: 85%;
+  margin-top: -288px;
+}
+ }
+
+ .hotelsX-item-9 {
+  // border: 3px solid rgb(255, 208, 0);
+  grid-row: 7/8;
+  grid-column: 2/3;
+  margin-top: -300px;
+  @include respond(third-custom-brake) {
+    grid-row: 12/13;
+    grid-column: 1/3;
+    width: 93%;
+    margin-top: -278px;
+     }
+    @include respond(phone) {
+      width: 91%;
+      margin-top: -295px;
+    }
+    @include respond(forth-custom-brake) {
+      margin-top: -310px;
+  }
+    @include respond(fifth-custom-brake) {
+      width: 89%;
+      margin-top: -330px;
+  }
+  @include respond(fifth-custom-brake) {
+    width: 88%;
+    margin-top: -315px;
+  }
+  @include respond(galaxy-fold) {
+    width: 85%;
+  }
+ 
+
+  p {
+    margin: 0!important;
+  }
+  .hotels-title {
+    margin-bottom: 15px;
+  }
+   }
+
+   .hotelsX-item-10 {
+    // border: 3px solid rgb(202, 6, 49);
+  grid-row: 8/9;
+  grid-column: 2/3;
+  margin-top: -263px;
+  @include respond(second-custom-brake) {
+    margin-top: -237px;
+  }
+  @include respond(third-custom-brake) {
+    grid-row: 13/14;
+    grid-column: 1/3;
+    margin-top: -246px;
+    width: 93%;
+  }
+  @include respond(phone) {
+    width: 91%;
+  }
+  @include respond(forth-custom-brake) {
+    width: 89%;
+    margin-top: -263px;
+}
+@include respond(fifth-custom-brake) {
+  width: 88%;
+  margin-top: -226px;
+}
+@include respond(galaxy-fold) {
+  width: 85%;
+  margin-top: -193px;
+}
+  .hotels-title {
+    margin-bottom: 15px;
+  }
+  p {
+    margin: 0!important;
+  }
+   }
+
+   .hotelsX-item-11 {
+    // border: 3px solid rgb(62, 202, 6);
+  grid-row: 9/10;
+  grid-column: 2/3;
+  margin-top: -251px;
+  @include respond(second-custom-brake) {
+    margin-top: -220px;
+  }
+  @include respond(third-custom-brake) {
+    grid-row: 14/15;
+    grid-column: 1/3;
+    width: 93%;
+  }
+  @include respond(phone) {
+    width: 91%;
+  }
+  @include respond(forth-custom-brake) {
+    width: 89%;
+    margin-top: -242px;
+}
+// @include respond(fifth-custom-brake) {
+//   margin-top: -237px;
+// }
+@include respond(fifth-custom-brake) {
+  width: 88%;
+  margin-top: -179px;
+}
+@include respond(galaxy-fold) {
+  width: 85%;
+  margin-top: -130px;
+}
+  .hotels-title {
+    margin-bottom: 15px;
+  }
+  p {
+    margin: 0!important;
+  }
+   }
+
+   .hotelsX-item-12 {
+    // border: 3px solid rgb(1, 98, 179);
+  grid-row: 10/11;
+  grid-column: 2/3;
+  margin-top: -266px;
+  @include respond(second-custom-brake) {
+    margin-top: -250px;
+  }
+  @include respond(third-custom-brake) {
+    grid-row: 15/16;
+    grid-column: 1/3;
+    width: 93%;
+  }
+  @include respond(phone) {
+    width: 91%;
+    margin-top: -235px;
+  }
+  @include respond(forth-custom-brake) {
+    width: 89%;
+    margin-top: -282px;
+}
+@include respond(fifth-custom-brake) {
+  width: 88%;
+  margin-top: -186px;
+}
+@include respond(galaxy-fold) {
+  width: 85%;
+  margin-top: -143px;
+}
+  .hotels-title {
+    margin-bottom: 15px;
+  }
+  p {
+    margin: 0!important;
+  }
+   }
+
+   .hotelsX-item-13 {
+    // border: 3px solid rgb(1, 98, 179);
+  grid-row: 11/12;
+  grid-column: 2/3;
+  margin-top: -180px;
+  @include respond(second-custom-brake) {
+    margin-top: -170px;
+  }
+  @include respond(third-custom-brake) {
+    grid-row: 16/17;
+    grid-column: 1/3;
+    margin-top: -134px;
+    width: 93%;
+  }
+  @include respond(phone) {
+    width: 91%;
+    margin-top: -112px;
+  }
+  @include respond(forth-custom-brake) {
+    width: 89%;
+    margin-top: -140px;
+}
+@include respond(fifth-custom-brake) {
+  width: 88%;
+  margin-top: -2px;
+}
+@include respond(galaxy-fold) {
+  width: 85%;
+  margin-top: 85px;
+}
+  .hotels-title {
+    margin-bottom: 15px;
+  }
+  p {
+    margin: 0!important;
+  }
+   }
+   
+
+
+
+// ******************HOTELSX SWIPER**************************
+
+.hotelxSwiper {
+  // border: 3px solid magenta;
+overflow: hidden!important;
+.swiper-button-next::after {
+ display: none;
+}
+.swiper-button-prev::after {
+  display: none;
+ }
+}
+
+.custom-slide-hotelx {
+  // border: 3px solid rgb(185, 0, 71);
+  height: 290px!important;
+  @include respond(forth-custom-brake) {
+    height: 200px!important;
+  }
+  @include respond(fifth-custom-brake) {
+    height: 170px!important;
+  }
+}
+
+.custom-slide-hotelx-thumb {
+  margin-top: -150px;
+  height: 145px!important;
+  width: 32%!important;
+
+  @include respond(second-custom-brake) {
+    height: 118px !important;
+    width: 30% !important;
+    margin-left: 7px;
+  }
+  @include respond(third-custom-brake) {
+    height: 128px !important;
+    margin-left: 9px;
+  }
+  @include respond(phone) {
+    height: 100px!important;
+    margin-left: 7px;
+
+   }
+
+   @include respond(forth-custom-brake) {
+    height: 100px!important;
+  width: 30%!important;
+  margin-left: 5px;
+  margin-right: auto;
+  }
+  @include respond(fifth-custom-brake) {
+    height: 65px!important;
+    width: 29%!important;
+  }
+  @include respond(galaxy-fold) {
+    height: 50px!important;
+    width: 28%!important;
+    margin-left: 6px;
+  }
+}
+
+
+// *****************************HOTEL X CARD********************************
+
+
+.hotelsx-card-container {
+  // border: 3px solid rgb(145, 3, 3);
+  display: grid;
+  grid-template-rows: 100px 100px;
+  grid-template-columns: 47% 47%;
+  column-gap: 40px;
+  justify-content: center;
+  height: 450px;
+  margin-top: -100px;
+  @include respond(first-custom-brake) {
+    column-gap: 28px;
+  }
+  @include respond(forth-custom-brake) {
+    column-gap: 15px;
+  }
+  @include respond(fifth-custom-brake) {
+    column-gap: 10px;
+  }
+}
+
+.hotelsx-card-1 {
+  // border: 3px solid rgb(252, 134, 0);
+  height: 390px;
+  @include respond(forth-custom-brake) {
+  margin-top: -25px;
+  }
+  @include respond(galaxy-fold) {
+    margin-top: -53px;
+    }
+   }
+.hotelsx-card-2 {
+  // border: 3px solid rgb(179, 5, 150);
+  height: 390px;
+  @include respond(forth-custom-brake) {
+    margin-top: -25px;
+    }
+    @include respond(galaxy-fold) {
+      margin-top: -53px;
+      }
+   }
+
+
+.hotelx-card-img {
+  width: 100%;
+  height: 50%;
+  object-fit: contain;
+}
+
+.hotelex-card-block {
+  // border: 3px solid rgb(92, 0, 57);
+  position: relative;
+  height: 238px;
+  width: 90%;
+  margin-top: -47px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+  background: whitesmoke;
+  @include respond(fifth-custom-brake) {
+    height: 278px;
+    margin-top: -60px;
+  }
+}
+
+
+.hotelsx-card-symbols-container {
+  // border: 3px solid rgb(253, 0, 139);
+  display: flex;
+  height: 40px;
+  width: 50%;
+  justify-content: space-around;
+  align-items: center;
+  color: #000000;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+  h2 {
+    margin: 0;
+  }
+  svg path {
+    stroke: #b9a587 !important;
+  }
+  @include respond(second-custom-brake) {
+    width: 105px;
+    height: 30px;
+    top: -103px;
+  }
+
+  @include respond(third-custom-brake) {
+    width: 88px;
+    height: 23px;
+    padding-top: 10px;
+  
+  }
+}
+
+.hotelsx-icons-style {
+  margin-left: 3px;
+  height: 1.4rem;
+  width: 1.4rem;
+  color: #b9a587;
+}
+
+.hotelsx-card-title {
+  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace !important;
+  @include respond(galaxy-fold) {
+    font-size: 1.2rem;
+  }
+}
+
+.hotelsx-card-button-reverse {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 140px;
+  height: 30px;
+  background: #ffffff00;
+  color: #b3a17d;
+  border: 1.5px solid #9c8a65;
+  margin-right: 0;
+  margin-top: 30px;
+  align-items: center;
+  border-radius: 3px;
+  transition: all 0.2s ease-in-out;
+  font-size: .7rem;
+  @include respond(galaxy-fold) {
+    font-size: .6rem;
+  }
+
+  &:hover {
+    animation: none;
+    background: #b3a17d;
+    color: #fff;
+    border: none;
+  }
+
+  @include respond(second-custom-brake) {
+    height: 30px;
+    margin-top: 24px;
+  }
+  @include respond(third-custom-brake) {
+    margin-top: 21px;
+  }
+  @include respond(fifth-custom-brake) {
+    width: 120px;
+    height: 23px;
+    margin-top: 12px;
+  }
+  @include respond(galaxy-fold) {
+    width: 110px;
+    height: 21px;
+    margin-top: 10px;
+  }
+}
+
+
+.what-to-see-grid {
+  display: grid;
+}

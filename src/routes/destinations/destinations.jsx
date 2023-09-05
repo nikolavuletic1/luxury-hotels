@@ -15,39 +15,18 @@ import { FaUtensils } from "react-icons/fa";
 
 
 // *********SWIPER IMPORTS***************
-// import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
-// import { Navigation, EffectFade } from "swiper";
 import { Navigation, Pagination } from "swiper";
-// import { SwiperEvents } from "swiper/types/swiper-events";
+
 
 import { GrStar } from "react-icons/gr";
-
 import GetHotelsData from "../../api";
-
 import DestinationSelectDropdown from "./selectDestinations";
 
-// const options = [
-//   { key: 1, value: "Test 1" },
-//   { key: 2, value: "Test 2" },
-//   { key: 3, value: "Test 3" },
-//   { key: 4, value: "Test 4" },
-// ];
-
-// const hotels = [
-//   { key: 1, name: "Hotel 1" },
-//   { key: 2, name: "Hotel 2" },
-//   { key: 3, name: "Hotel 3" },
-//   { key: 4, name: "Hotel 4" },
-//   // { key: 5, name: "Hotel 1" },
-//   // { key: 6, name: "Hotel 2" },
-//   // { key: 7, name: "Hotel 3" },
-//   // { key: 8, name: "Hotel 4" },
-// ];
 
 const Destinations = (props) => {
 
