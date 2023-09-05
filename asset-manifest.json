@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/luxury-hotels/static/css/main.4d8a449f.css",
-    "main.js": "/luxury-hotels/static/js/main.5c2bef2f.js",
+    "main.js": "/luxury-hotels/static/js/main.b49ef52d.js",
     "static/js/787.1bf10026.chunk.js": "/luxury-hotels/static/js/787.1bf10026.chunk.js",
     "static/media/VideoTour.mp4": "/luxury-hotels/static/media/VideoTour.fc897ae173db22cf4a04.mp4",
     "static/media/hotelx1.jpg": "/luxury-hotels/static/media/hotelx1.68a979e36fe1c0d9ecb4.jpg",
@@ -20,11 +20,11 @@
     "static/media/user.png": "/luxury-hotels/static/media/user.c920752422c11377083e.png",
     "index.html": "/luxury-hotels/index.html",
     "main.4d8a449f.css.map": "/luxury-hotels/static/css/main.4d8a449f.css.map",
-    "main.5c2bef2f.js.map": "/luxury-hotels/static/js/main.5c2bef2f.js.map",
+    "main.b49ef52d.js.map": "/luxury-hotels/static/js/main.b49ef52d.js.map",
     "787.1bf10026.chunk.js.map": "/luxury-hotels/static/js/787.1bf10026.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4d8a449f.css",
-    "static/js/main.5c2bef2f.js"
+    "static/js/main.b49ef52d.js"
   ]
 }
