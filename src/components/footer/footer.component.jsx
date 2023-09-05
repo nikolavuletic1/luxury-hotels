@@ -123,7 +123,7 @@ const Footer = () => {
 
 </div>
    
-   
+  
     </div>
     <div className="footer-black-overlay">
     <h3 className="copyright"> &copy; 2023 All rights reserved</h3>
