@@ -126,7 +126,7 @@ const Footer = () => {
    
     </div>
     <div className="footer-black-overlay">
-    <h3 className="copyright"> &copy; 2022 Šagi All rights reserved</h3>
+    <h3 className="copyright"> &copy; 2023 All rights reserved</h3>
     <h3 className="terms"> Terms of use | Privacy Environmental Policy</h3>
     </div>
     </div>
