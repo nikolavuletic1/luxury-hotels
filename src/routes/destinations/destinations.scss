@@ -774,14 +774,14 @@
   transition: all 0.2s ease-in-out;
 
   svg polyline {
-    stroke: #b37d7d;
+    stroke:#b3a17d;
     stroke-width: 2;
     margin-left: 130px;
   }
 
   &:hover {
     svg polyline {
-      stroke: white;
+      stroke: #52462e;
     }
   }
 }
